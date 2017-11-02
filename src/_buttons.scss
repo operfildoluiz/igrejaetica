@@ -1,3 +1,5 @@
+@import 'resets';
+
 @mixin buttonbg($bg){
   background: $bg;
 
@@ -16,7 +18,12 @@
   text-decoration: none;
   padding: 5px 10px;
   border-radius: 3px;
-  font-size: 2em;
+  // font-size: 2em;
+}
+
+.btn-block {
+  width: 100%;
+  display: block;
 }
 
 .btn-green {
@@ -35,3 +42,39 @@
   @include buttonbg(#e74c3c);
 }
 
+// Bootstrap-inspire
+.btn-default {
+  @include buttonbg(#FFFFFF);
+}
+
+.btn-primary {
+  @include buttonbg(#286090);
+}
+
+.btn-success {
+  @include buttonbg(#449D44);
+}
+
+.btn-danger {
+  @include buttonbg(#C9302C);
+}
+
+.btn-warning {
+  @include buttonbg(#EC971F);
+}
+
+.btn-info {
+  @include buttonbg(#31B0D5);
+}
+
+// POG
+@media (max-width: 468px) {
+  form {
+    .btn {
+      width: 100%;
+      display: block;
+      margin-bottom: 5px;
+      transform: scale(1);
+    }
+  }
+}

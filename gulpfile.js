@@ -6,21 +6,11 @@ var htmlmin = require('gulp-htmlmin');
 var rename = require('gulp-rename');
 var pump = require('pump');
 
-gulp.task('compile',function(cb){
-  console.log('========> Compilando SCSS...');
+gulp.task('minify-css',function(cb){
+  console.log('========> Minificando SCSS...');
   pump([
     gulp.src("./src/*.scss"),
     sass(),
-    gulp.dest('./css')
-    ],
-    cb
-    );
-});
-
-gulp.task('minify',['compile'], function(cb) {
-  console.log('========> Minificando CSS...');
-  pump([
-    gulp.src('./css/*.css'),
     cssmin(),
     rename({
       suffix: '.min'
@@ -57,7 +47,7 @@ gulp.task('minify-html', function (cb) {
 });
 
 gulp.task('default', function(){
-  gulp.watch('./src/*.scss',['minify']);
+  gulp.watch('./src/*.scss',['minify-css']);
   gulp.watch('./src/*.js',['minify-js']);
   gulp.watch('./src/*.html',['minify-html']);
 });

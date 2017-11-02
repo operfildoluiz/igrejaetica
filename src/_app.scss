@@ -1,11 +1,11 @@
 /*Imports*/
-@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Open Sans');
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
 /* Reset */
 * {
   margin: 0px;
-  font-family: 'Lora', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #fff;
   font-size: 16px;
   box-sizing: border-box;
@@ -74,7 +74,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+    background-image: linear-gradient(to bottom right,#283c86,#45a247);
     opacity: .6;
   }
 
@@ -84,19 +84,24 @@
   z-index: 999;
 }
 
-/* Background */
-
-.bg-gold {
-  background: #bdc3c7;
-  background: -webkit-linear-gradient(to bottom, #bdc3c7, #070000);
-  background: linear-gradient(to bottom , #bdc3c7, #070000);
+.half-block {
+  width: 49%;
+  display: inline-block;
+  margin: 1px;
 }
+
+/* Background */
 
 .bg-dark {
   background: #232526;
   background: -webkit-linear-gradient(to top, #414345, #232526);
   background: linear-gradient(to top, #414345, #232526);
 
+}
+.bg-gold {
+  background: #4B79A1;
+  background: -webkit-linear-gradient(to right, #4B79A1, #283E51);
+  background: linear-gradient(to right , #4B79A1, #283E51);
 }
 
 .bg-white {
@@ -123,6 +128,7 @@
   border: 5px solid #fff;
 // box-shadow: 5px 5px 4px #3a4d6f;
 }
+
 
 
 // Navbar

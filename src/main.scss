@@ -52,6 +52,28 @@
 
     }
 
+    .master p {
+        @extend .m;
+        @extend .m-us;
+    }
+
+}
+
+// FIXES
+.btn {
+    .fa {
+        color: #fff;
+    }
+}
+
+.social {
+    .half {
+        padding: 10px;
+    }
+
+    .btn {
+        margin: 4px;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -63,14 +85,6 @@
 }
 
 @media (max-width: 1024px) {
-    form {
-        .btn {
-            font-size: 1em;
-            transform: scale(0.5);
-            width: 100%;
-        }
-    }
-
     .img-responsive {
         max-width: 100% !important;
     }

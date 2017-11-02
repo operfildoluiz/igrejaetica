@@ -1,5 +1,5 @@
 {
-  "name": "nori",
+  "name": "igrejaetica",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lhcgoncalves/nori.git"
+    "url": "git+https://github.com/lhcgoncalves/igrejaetica.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lhcgoncalves/nori/issues"
+    "url": "https://github.com/lhcgoncalves/igrejaetica/issues"
   },
-  "homepage": "https://github.com/lhcgoncalves/nori#readme",
+  "homepage": "https://github.com/lhcgoncalves/igrejaetica#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-cssmin": "^0.2.0",

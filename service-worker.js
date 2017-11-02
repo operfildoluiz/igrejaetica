@@ -1,27 +1,27 @@
 var files = [
-  'assets/intro-car.jpg',
-  'assets/logo.png',
-  'assets/quem-somos.jpg',
-  'manifest.json',
-  'js/bundle.min.js',
-  'js/main.min.js',
-  'css/main.min.css',
-  'assets/carros/classico-1.jpg',
-  'assets/carros/classico-2.jpg',
-  'assets/carros/classico-3.jpg',
-  'assets/carros/classico-4.jpg',
-  'assets/carros/classico-5.jpg',
-  'assets/carros/classico-6.jpg',
-  'assets/carros/classico-7.jpg',
-  'assets/carros/lancha-1.jpg',
-  'assets/carros/lancha-2.jpg',
-  'assets/carros/lancha-3.jpg',
-  'assets/carros/lancha-4.jpg',
-  'assets/carros/moderno-1.jpg',
-  'assets/carros/moderno-2.jpg',
-  'assets/carros/moderno-3.jpg',
-  'assets/carros/moderno-4.jpg',
-  'assets/carros/moderno-5.jpg',
+  // 'assets/intro-car.jpg',
+  // 'assets/logo.png',
+  // 'assets/quem-somos.jpg',
+  // 'manifest.json',
+  // 'js/bundle.min.js',
+  // 'js/main.min.js',
+  // 'css/main.min.css',
+  // 'assets/carros/classico-1.jpg',
+  // 'assets/carros/classico-2.jpg',
+  // 'assets/carros/classico-3.jpg',
+  // 'assets/carros/classico-4.jpg',
+  // 'assets/carros/classico-5.jpg',
+  // 'assets/carros/classico-6.jpg',
+  // 'assets/carros/classico-7.jpg',
+  // 'assets/carros/lancha-1.jpg',
+  // 'assets/carros/lancha-2.jpg',
+  // 'assets/carros/lancha-3.jpg',
+  // 'assets/carros/lancha-4.jpg',
+  // 'assets/carros/moderno-1.jpg',
+  // 'assets/carros/moderno-2.jpg',
+  // 'assets/carros/moderno-3.jpg',
+  // 'assets/carros/moderno-4.jpg',
+  // 'assets/carros/moderno-5.jpg',
   ];
 // dev only
 if (typeof files == 'undefined') {
@@ -30,7 +30,7 @@ if (typeof files == 'undefined') {
   files.push('./');
 }
 
-var CACHE_NAME = 'nori-v1';
+var CACHE_NAME = 'igrejaetica-v1';
 
 self.addEventListener('activate', function(event) {
   console.log('[SW] Activate');
