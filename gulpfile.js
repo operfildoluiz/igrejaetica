@@ -37,12 +37,15 @@ gulp.task('minify-js', function (cb) {
     );
 });
 
-gulp.task('minify-sw', function (cb) {
+gulp.task('pwaify', function (cb) {
   console.log('========> Minificando JS...');
-  pump([
-    gulp.src('./service-worker.js'),
-    uglify(),
-    gulp.dest('./build')
+  pump(
+    [
+      gulp.src('./service-worker.js'),
+      uglify(),
+      gulp.dest('./build'),
+      gulp.src('./manifest.json'),
+      gulp.dest('./build'),
     ],
     cb
     );
@@ -81,7 +84,7 @@ gulp.task('build', function() {
       'minify-js',
       'minify-css',
       'copy-assets',
-      'minify-sw'
+      'pwaify'
     ]
   );
 });
