@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d ./build"
   },
   "repository": {
     "type": "git",
@@ -18,13 +21,17 @@
   },
   "homepage": "https://github.com/lhcgoncalves/igrejaetica#readme",
   "devDependencies": {
+    "del": "^3.0.0",
+    "gh-pages": "^1.0.0",
     "gulp": "^3.9.1",
+    "gulp-cli": "^1.4.0",
     "gulp-cssmin": "^0.2.0",
     "gulp-htmlmin": "^3.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",
-    "pump": "^1.0.2"
+    "pump": "^1.0.2",
+    "run-sequence": "^2.2.0"
   },
   "dependencies": {
     "smooth-scroll": "^12.1.5"
